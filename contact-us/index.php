@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indians IPTV</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style2.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<header>
+  <nav class="navbar">
+    <div class="logo">Indians<span>IPTV</span></div>
+
+   <div class="nav-links" id="navLinks">
+      <a href="/index.php">Home</a>
+      <a href="/subscription/index.html">Subscription</a>
+      <a href="/set-top-box/index.html">Set Top Box</a>
+      <a href="/free-trial/index.html">Free Trial</a>
+      <a href="/tv-channels/index.html">TV Channels</a>
+      <a href="/about-us/index.html">About Us</a>
+      <a href="/contact-us/index.php">Contact</a>
+      <a href="/FAQ/index.html">FAQ</a>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+</header>
+
+    <section class="iptv-contact">
+
+  <!-- HERO -->
+  <div class="iptv-contact-hero">
+    <div class="iptv-contact-hero-overlay"></div>
+    <div class="iptv-contact-hero-content">
+      <h1>CONTACT <span>US</span></h1>
+      <div class="iptv-contact-hero-line"></div>
+    </div>
+  </div>
+
+  <!-- CONTACT MAIN -->
+  <div class="iptv-contact-main">
+
+    <!-- LEFT : DETAILS -->
+    <div class="iptv-contact-info">
+      <h2>Contact <span>Details</span></h2>
+
+      <ul class="iptv-contact-list">
+        <li>📞 +1 877-877-4488</li>
+        <li>📞 +1 805-586-8078</li>
+        <li>💬 +1 805-436-2336</li>
+        <li>✉️ support@indiansiptv.com</li>
+        <li>🆔 Skype: live:.cid.9c79ecc2f307247c</li>
+        <li>📍 San Francisco, California, USA</li>
+      </ul>
+    </div>
+
+<form class="iptv-contact-form" method="POST" action="/form_process.php">
+
+  <h2>Contact <span>Form</span></h2>
+
+  <div class="iptv-contact-grid">
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="tel" name="phone" placeholder="Contact Number" required />
+  </div>
+
+  <input type="email" name="email" placeholder="Email Address" required />
+  <input type="text" name="country" placeholder="Country" />
+  <textarea name="message" rows="5" placeholder="Write Your Message (optional)"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+
+  </div>
+
+  <!-- CTA BAR -->
+  <div class="iptv-contact-cta">
+    <div class="iptv-contact-cta-left">
+      <small>Ready to get started?</small>
+      <h3>Talk to an IPTV Expert NOW</h3>
+      <p>Our experts are ready to listen to you and resolve your queries</p>
+    </div>
+
+    <div class="iptv-contact-cta-right">
+      <button class="iptv-btn-light">BUY NOW</button>
+      <button class="iptv-btn-light">REQUEST A CALLBACK</button>
+      <div class="iptv-contact-cta-info">
+        <span>📞 +1 877-877-4488</span>
+        <span>✉️ support@indiansiptv.com</span>
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<footer class="iptv-footer">
+
+  <div class="iptv-footer__overlay"></div>
+  <div class="iptv-footer__container">
+
+    <!-- BRAND -->
+    <div class="iptv-footer__brand">
+      <div class="iptv-footer__logo">
+        <span>Indians</span><strong>IPTV</strong>
+      </div>
+
+      <p class="iptv-footer__desc">
+        Our OTT Box is a powerful streaming device that lets you watch your
+        favorite TV shows, movies, and live channels over the internet.
+        Enjoy smooth streaming, fast navigation, and high-quality content
+        without cable.
+      </p>
+    </div>
+
+    <!-- MENU -->
+    <div class="iptv-footer__col">
+      <h4 class="iptv-footer__title">Menu</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Subscription</a></li>
+        <li><a href="#">Set Top Box</a></li>
+        <li><a href="#">Free Trial</a></li>
+        <li><a href="#">TV Channels</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Blogs</a></li>
+      </ul>
+    </div>
+
+    <!-- PLANS -->
+    <div class="iptv-footer__col">
+      <h4 class="iptv-footer__title">Our Plans</h4>
+      <ul>
+        <li>One Month Service (Without box)</li>
+        <li>Three Month Service (Without box)</li>
+        <li>Six Month Service (Without box)</li>
+        <li>Yearly Service (Without box)</li>
+        <li>Two Year Service (Without box)</li>
+        <li>Three Year Service (Without box)</li>
+        <li>Five-Year Service (Without box)</li>
+        <li>Five-Year Service (With box)</li>
+      </ul>
+    </div>
+
+    <!-- ADDRESS -->
+    <div class="iptv-footer__col">
+      <h4 class="iptv-footer__title">Our Address</h4>
+      <ul class="iptv-footer__contact">
+        <li>📞 +1 877-877-4488</li>
+        <li>📞 +1 805-586-8078</li>
+        <li>💬 +1 805-436-2326</li>
+        <li>✉ support@indiansiptv.com</li>
+        <li>📍 San Francisco, California, USA</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- BOTTOM BAR -->
+  <div class="iptv-footer__bottom">
+    <div class="iptv-footer__bottom-inner">
+      <div class="iptv-footer__links">
+        <a href="#">Privacy Policy</a>
+        <span>|</span>
+        <a href="#">Terms & Condition</a>
+        <span>|</span>
+        <a href="#">Refund Policy</a>
+      </div>
+
+      <div class="iptv-footer__copy">
+        Indiansiptv © 2025. All Rights Reserved
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+<script src="/script.js"></script>
+<!-- <script>
+    document.addEventListener('submit', function (e) {
+  if (e.target.closest('.iptv-contact-form')) {
+    e.preventDefault();
+    alert('Form submitted successfully!');
+  }
+});
+</script> -->
+
+<script>
+  <script>
+  const params = new URLSearchParams(window.location.search);
+  const error = params.get("error");
+
+  if (error === "limit") {
+    alert("You have already submitted a request. Please try again after 7 days.");
+  }
+
+  if (error === "missing") {
+    alert("Please fill all required fields.");
+  }
+</script>
+</script>
+</body>
+</html>

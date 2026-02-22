@@ -1,0 +1,278 @@
+/* =====================
+   COLOR VARIABLES
+===================== */
+:root {
+  --bg-dark: #0b0e14;
+  --bg-dark-2: #111827;
+  --gold: #d4af37;
+  --gold-soft: #f5d76e;
+  --white: #ffffff;
+  --muted: #9ca3af;
+  --glass-bg: rgba(255, 255, 255, 0.06);
+  --border-glass: rgba(255, 255, 255, 0.15);
+}
+
+/* =====================
+   RESET
+===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(120deg, var(--bg-dark), var(--bg-dark-2));
+  color: var(--white);
+}
+
+/* =====================
+   NAVBAR
+===================== */
+header {
+  background: #000;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: auto;
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--gold);
+}
+
+.nav-links {
+  display: flex;
+  gap: 28px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--gold);
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 26px;
+  height: 3px;
+  background: var(--white);
+  border-radius: 4px;
+  transition: all 0.4s ease;
+}
+
+/* Hamburger Animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: #000;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    padding: 25px 0;
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}
+
+
+/* =========================================
+   IPTV FOOTER
+========================================= */
+
+.iptv-footer {
+  position: relative;
+  background: linear-gradient(
+    180deg,
+    var(--bg-dark),
+    var(--bg-dark-2)
+  );
+  color: var(--white);
+}
+
+.iptv-footer__overlay {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    circle at top,
+    rgba(0,0,0,0.3),
+    rgba(0,0,0,0.8)
+  );
+}
+
+.iptv-footer__container {
+  position: relative;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 90px 20px 70px;
+  display: grid;
+  grid-template-columns: 1.4fr 1fr 1fr 1fr;
+  gap: 50px;
+}
+
+/* BRAND */
+
+.iptv-footer__logo {
+  font-size: 26px;
+  font-weight: 800;
+  margin-bottom: 18px;
+}
+
+.iptv-footer__logo span {
+  color: var(--white);
+}
+
+.iptv-footer__logo strong {
+  color: var(--gold);
+}
+
+.iptv-footer__desc {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--muted);
+  max-width: 360px;
+}
+
+/* COLUMNS */
+
+.iptv-footer__title {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 18px;
+  color: var(--gold);
+}
+
+.iptv-footer__col ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.iptv-footer__col ul li {
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--muted);
+}
+
+.iptv-footer__col ul li a {
+  color: var(--muted);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.iptv-footer__col ul li a:hover {
+  color: var(--gold);
+}
+
+/* CONTACT */
+
+.iptv-footer__contact li {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+/* BOTTOM BAR */
+
+
+/* Bottom copyright bar */
+.iptv-footer__bottom {
+  background: linear-gradient(
+    135deg,
+    #f5d76e,
+    #d4af37
+  ); /* bright gold from your palette */
+  color: #0b0e14; /* dark text for contrast */
+}
+
+/* Inner layout */
+.iptv-footer__bottom-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* Links */
+.iptv-footer__links a {
+  color: #0b0e14;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: opacity 0.25s ease;
+}
+
+.iptv-footer__links a:hover {
+  opacity: 0.7;
+}
+
+.iptv-footer__links span {
+  color: #0b0e14;
+  font-weight: 700;
+}
+
+/* Copyright text */
+.iptv-footer__copy {
+  font-size: 15px;
+  font-weight: 700;
+  color: #0b0e14;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .iptv-footer__bottom-inner {
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+  }
+}

@@ -1,0 +1,691 @@
+/* =========================================
+   IPTV SERVICE PAGE BODY
+========================================= */
+
+.iptv-service {
+  padding: 90px 20px 110px;
+  background: linear-gradient(
+    180deg,
+    var(--bg-dark),
+    var(--bg-dark-2)
+  );
+  color: var(--white);
+}
+
+.iptv-service__container {
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+/* =====================
+   HEADLINE
+===================== */
+
+.iptv-service__headline {
+  text-align: center;
+  max-width: 1000px;
+  margin: 0 auto 70px;
+}
+
+.iptv-service__headline h1 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.3;
+}
+
+.iptv-service__headline span {
+  color: var(--gold);
+}
+
+/* =====================
+   GRID LAYOUT
+===================== */
+
+.iptv-service__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* =====================
+   IMAGE
+===================== */
+
+.iptv-service__image img {
+  width: 100%;
+  border-radius: 24px;
+  object-fit: cover;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* =====================
+   CONTENT
+===================== */
+
+.iptv-service__content h2 {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 22px;
+}
+
+.iptv-service__content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-bottom: 18px;
+  max-width: 560px;
+}
+
+/* BUTTON */
+
+.iptv-service__btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 30px;
+  border-radius: 12px;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  background: linear-gradient(
+    135deg,
+    var(--gold),
+    var(--gold-soft)
+  );
+  color: var(--bg-dark);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iptv-service__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+@media (max-width: 1024px) {
+
+  .iptv-service__grid {
+    gap: 50px;
+  }
+
+  .iptv-service__headline h1 {
+    font-size: 34px;
+  }
+
+  .iptv-service__content h2 {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .iptv-service__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .iptv-service__headline {
+    margin-bottom: 50px;
+  }
+
+  .iptv-service__headline h1 {
+    font-size: 28px;
+  }
+
+  .iptv-service__content {
+    text-align: center;
+  }
+
+  .iptv-service__content p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* =========================================
+   IPTV LANGUAGE TOGGLE SECTION
+========================================= */
+
+.iptv-lang {
+  padding: 80px 20px;
+  background: linear-gradient(180deg, var(--bg-dark), var(--bg-dark-2));
+  color: var(--white);
+}
+
+.iptv-lang__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* =====================
+   BUTTON GRID
+===================== */
+
+.iptv-lang__buttons {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 14px;
+  margin-bottom: 50px;
+}
+
+.iptv-lang__btn {
+  padding: 12px 10px;
+  border-radius: 10px;
+  border: 1px solid var(--border-glass);
+  background: var(--glass-bg);
+  color: var(--white);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+}
+
+.iptv-lang__btn:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+}
+
+.iptv-lang__btn.active {
+  background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+  color: var(--bg-dark);
+  border-color: transparent;
+}
+
+/* =====================
+   CONTENT
+===================== */
+
+.iptv-lang__content {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: center;
+  animation: iptvFade 0.4s ease;
+}
+
+.iptv-lang__content h3 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 14px;
+}
+
+.iptv-lang__content p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* =====================
+   ANIMATION
+===================== */
+
+@keyframes iptvFade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 1024px) {
+  .iptv-lang__buttons {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .iptv-lang__buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .iptv-lang__content h3 {
+    font-size: 22px;
+  }
+}
+
+
+/* =========================================
+   IPTV FAQ SECTION
+========================================= */
+
+.iptv-faq {
+  padding: 90px 20px;
+  background: var(--bg-dark);
+  color: var(--white);
+}
+
+.iptv-faq__container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.iptv-faq__title {
+  font-size: 36px;
+  font-weight: 800;
+  margin-bottom: 40px;
+}
+
+/* =========================
+   ACCORDION
+========================= */
+
+.iptv-faq__accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.iptv-faq__item {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-glass);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.iptv-faq__item.active {
+  border-color: var(--gold);
+}
+
+/* QUESTION */
+
+.iptv-faq__question {
+  width: 100%;
+  padding: 20px 24px;
+  background: transparent;
+  border: none;
+  color: var(--white);
+  font-size: 16px;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.iptv-faq__question:hover {
+  color: var(--gold);
+}
+
+/* ICON */
+
+.iptv-faq__icon {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--gold);
+  transition: transform 0.3s ease;
+}
+
+.iptv-faq__item.active .iptv-faq__icon {
+  transform: rotate(180deg);
+}
+
+/* ANSWER */
+
+.iptv-faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 24px;
+}
+
+.iptv-faq__item.active .iptv-faq__answer {
+  max-height: 300px;
+  padding: 0 24px 20px;
+}
+
+.iptv-faq__answer p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--muted);
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+  .iptv-faq__title {
+    font-size: 26px;
+  }
+
+  .iptv-faq__question {
+    font-size: 14px;
+    padding: 16px 18px;
+  }
+
+  .iptv-faq__answer p {
+    font-size: 13px;
+  }
+
+}
+
+/* =========================================
+   IPTV BENGALI PLANS - PREMIUM DARK THEME
+========================================= */
+
+.iptv-bengali-plans {
+  padding: 110px 20px;
+  background: linear-gradient(180deg, var(--bg-dark), var(--bg-dark-2));
+  color: var(--white);
+}
+
+.iptv-bengali-plans__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+  align-items: center;
+}
+
+/* =====================
+   LEFT CONTENT
+===================== */
+
+.iptv-bengali-plans__content h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 28px;
+  line-height: 1.2;
+}
+
+.iptv-bengali-plans__content p {
+  font-size: 16px;
+  line-height: 1.9;
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+
+.iptv-bengali-plans__content strong {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* =====================
+   RIGHT GLASS CARD
+===================== */
+
+.iptv-bengali-plans__card {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-glass);
+  backdrop-filter: blur(14px);
+  border-radius: 26px;
+  padding: 60px 50px;
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.iptv-bengali-plans__card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+}
+
+/* CARD TITLE */
+
+.iptv-bengali-plans__card h3 {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 22px;
+  line-height: 1.2;
+  background: linear-gradient(90deg, var(--gold), var(--gold-soft));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* CARD TEXT */
+
+.iptv-bengali-plans__card p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 38px;
+  color: var(--muted);
+}
+
+.iptv-bengali-plans__card span {
+  color: var(--gold);
+  font-weight: 700;
+}
+
+/* =====================
+   BUTTONS
+===================== */
+
+.iptv-bengali-plans__actions {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: center;
+}
+
+.iptv-btn {
+  padding: 15px 40px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.35s ease;
+  display: inline-block;
+}
+
+/* PRIMARY BUTTON */
+
+.iptv-btn--primary {
+  background: linear-gradient(135deg, var(--gold), var(--gold-soft));
+  color: var(--bg-dark);
+}
+
+.iptv-btn--primary:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.35);
+}
+
+/* SECONDARY BUTTON */
+
+.iptv-btn--secondary {
+  border: 1px solid var(--border-glass);
+  background: transparent;
+  color: var(--white);
+}
+
+.iptv-btn--secondary:hover {
+  border-color: var(--gold);
+  color: var(--gold);
+  transform: translateY(-4px);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 992px) {
+  .iptv-bengali-plans__container {
+    grid-template-columns: 1fr;
+    gap: 60px;
+  }
+
+  .iptv-bengali-plans__content h2 {
+    font-size: 32px;
+  }
+
+  .iptv-bengali-plans__card h3 {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 600px) {
+  .iptv-bengali-plans {
+    padding: 80px 16px;
+  }
+
+  .iptv-bengali-plans__card {
+    padding: 45px 28px;
+  }
+}
+
+
+/* =========================================
+   BENGALI IPTV – GET STARTED SECTION
+========================================= */
+
+.iptv-bengali-start {
+  background: var(--bg-dark);
+  padding: 100px 20px;
+  color: var(--white);
+}
+
+.iptv-bengali-start__container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 70px;
+  align-items: center;
+}
+
+/* IMAGE */
+
+.iptv-bengali-start__media {
+  display: flex;
+  justify-content: center;
+}
+
+.iptv-bengali-start__image {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 22px;
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.45);
+}
+
+/* CONTENT */
+
+.iptv-bengali-start__title {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.25;
+  margin-bottom: 22px;
+}
+
+.iptv-bengali-start__title span {
+  color: var(--gold);
+}
+
+.iptv-bengali-start__text {
+  font-size: 16px;
+  line-height: 1.8;
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.iptv-bengali-start__steps {
+  margin: 24px 0;
+  padding-left: 18px;
+}
+
+.iptv-bengali-start__steps li {
+  margin-bottom: 12px;
+  font-size: 16px;
+  color: var(--white);
+}
+
+.iptv-bengali-start__steps strong {
+  color: var(--gold-soft);
+}
+
+.iptv-bengali-start__highlight {
+  margin-top: 22px;
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--white);
+}
+
+.iptv-bengali-start__highlight span {
+  color: var(--gold);
+}
+
+/* BUTTONS */
+
+.iptv-bengali-start__actions {
+  display: flex;
+  gap: 18px;
+  margin-top: 34px;
+  flex-wrap: wrap;
+}
+
+.iptv-btn {
+  padding: 14px 34px;
+  border-radius: 999px;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* PRIMARY */
+
+.iptv-btn--primary {
+  background: var(--gold);
+  color: var(--bg-dark);
+}
+
+.iptv-btn--primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.45);
+}
+
+/* SECONDARY */
+
+.iptv-btn--secondary {
+  background: transparent;
+  color: var(--white);
+  border: 2px solid var(--border-glass);
+}
+
+.iptv-btn--secondary:hover {
+  background: var(--glass-bg);
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 992px) {
+  .iptv-bengali-start__container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .iptv-bengali-start__title {
+    font-size: 34px;
+  }
+
+  .iptv-bengali-start__media {
+    order: -1;
+  }
+}
+
+@media (max-width: 600px) {
+  .iptv-bengali-start {
+    padding: 70px 16px;
+  }
+
+  .iptv-bengali-start__title {
+    font-size: 28px;
+  }
+
+  .iptv-bengali-start__actions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

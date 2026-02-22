@@ -1,0 +1,297 @@
+/* ================================
+   IPTV ABOUT US SECTION
+================================ */
+
+.iptv-about {
+  background: linear-gradient(
+    180deg,
+    var(--bg-dark),
+    var(--bg-dark-2)
+  );
+  color: var(--white);
+  padding-bottom: 80px;
+}
+
+/* Banner */
+.iptv-about__banner {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.3)
+  );
+  padding: 60px 20px;
+}
+
+.iptv-about__banner h1 {
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.iptv-about__line {
+  display: block;
+  width: 70px;
+  height: 3px;
+  background: var(--gold);
+  margin-top: 12px;
+}
+
+/* Container */
+.iptv-about__container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 60px 20px 0;
+}
+
+/* Headline */
+.iptv-about__headline {
+  font-size: 28px;
+  line-height: 1.4;
+  margin-bottom: 50px;
+}
+
+.iptv-about__headline span {
+  color: var(--gold);
+}
+
+/* Grid */
+.iptv-about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Image */
+.iptv-about__media img {
+  width: 100%;
+  max-width: 420px;
+  display: block;
+  border-radius: 14px;
+  background: var(--glass-bg);
+  padding: 12px;
+  border: 1px solid var(--border-glass);
+}
+
+/* Content */
+.iptv-about__content h3 {
+  font-size: 24px;
+  margin-bottom: 18px;
+}
+
+.iptv-about__content p {
+  font-size: 15px;
+  color: var(--muted);
+  line-height: 1.7;
+  margin-bottom: 16px;
+}
+
+/* CTA */
+.iptv-about__cta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 26px;
+  background: var(--gold);
+  color: var(--bg-dark);
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.iptv-about__cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 25px rgba(212, 175, 55, 0.35);
+}
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 900px) {
+  .iptv-about__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .iptv-about__media img {
+    margin: auto;
+  }
+
+  .iptv-about__headline {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .iptv-about__banner h1 {
+    font-size: 26px;
+  }
+
+  .iptv-about__content h3 {
+    font-size: 20px;
+  }
+}
+
+/* ===========================
+   IPTV MISSION SECTION
+=========================== */
+
+.iptv-mission {
+  background: var(--bg-dark);
+  padding: 80px 20px;
+  color: var(--white);
+}
+
+.iptv-mission__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.iptv-mission__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+/* Content */
+.iptv-mission__content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+.iptv-mission__content p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 16px;
+  max-width: 520px;
+}
+
+.iptv-mission__btn {
+  display: inline-block;
+  margin-top: 18px;
+  padding: 14px 28px;
+  background: var(--gold);
+  color: var(--bg-dark);
+  font-weight: 600;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.iptv-mission__btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(212, 175, 55, 0.3);
+}
+
+/* Image */
+.iptv-mission__image img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 16px;
+  border: 1px solid var(--border-glass);
+  background: var(--glass-bg);
+  padding: 10px;
+}
+
+/* CTA Box */
+.iptv-mission__cta {
+  background: var(--gold);
+  padding: 40px;
+  border-radius: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.iptv-mission__cta-left span {
+  font-size: 14px;
+  color: var(--bg-dark);
+}
+
+.iptv-mission__cta-left h3 {
+  font-size: 24px;
+  margin: 8px 0;
+  color: var(--bg-dark);
+}
+
+.iptv-mission__cta-left p {
+  font-size: 14px;
+  color: var(--bg-dark);
+}
+
+/* CTA Buttons */
+.iptv-mission__cta-buttons {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 15px;
+}
+
+.iptv-btn {
+  padding: 12px 22px;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.iptv-btn--light {
+  background: var(--bg-dark);
+  color: var(--white);
+}
+
+.iptv-btn--outline {
+  border: 2px solid var(--bg-dark);
+  color: var(--bg-dark);
+}
+
+.iptv-btn--light:hover {
+  background: var(--bg-dark-2);
+}
+
+.iptv-btn--outline:hover {
+  background: var(--bg-dark);
+  color: var(--white);
+}
+
+/* Contact Info */
+.iptv-mission__contact span {
+  display: block;
+  font-size: 14px;
+  color: var(--bg-dark);
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 992px) {
+  .iptv-mission__grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .iptv-mission__content p {
+    margin: 0 auto 16px;
+  }
+
+  .iptv-mission__image img {
+    margin: 0 auto;
+  }
+
+  .iptv-mission__cta {
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .iptv-mission__cta-buttons {
+    justify-content: center;
+  }
+}

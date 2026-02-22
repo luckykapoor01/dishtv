@@ -1,0 +1,611 @@
+/* ========== FREE TRIAL SECTION ========== */
+
+.iptv-free-trial {
+  width: 100%;
+  background: var(--bg-dark);
+  color: var(--white);
+}
+
+/* Hero */
+.iptv-free-trial__hero {
+  background: radial-gradient(
+      circle at top left,
+      rgba(255, 0, 0, 0.35),
+      transparent 60%
+    ),
+    linear-gradient(180deg, #000, var(--bg-dark));
+  padding: 70px 20px;
+}
+
+.iptv-free-trial__hero-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.iptv-free-trial__hero h1 {
+  font-size: clamp(28px, 5vw, 52px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.iptv-free-trial__hero span {
+  color: var(--gold);
+}
+
+.iptv-free-trial__line {
+  width: 120px;
+  height: 4px;
+  background: var(--gold);
+  margin-top: 16px;
+}
+
+/* Content Layout */
+.iptv-free-trial__content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 70px 20px;
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 50px;
+  align-items: center;
+}
+
+/* Form */
+.iptv-free-trial__form-wrap {
+  background: var(--glass-bg);
+  border: 1px solid var(--border-glass);
+  padding: 40px;
+  border-radius: 16px;
+}
+
+.iptv-free-trial__form-wrap h2 {
+  margin-bottom: 24px;
+  font-size: 28px;
+}
+
+.iptv-free-trial__form {
+  display: grid;
+  gap: 16px;
+}
+
+.iptv-free-trial__form input,
+.iptv-free-trial__form select,
+.iptv-free-trial__form textarea {
+  width: 100%;
+  padding: 14px 16px;
+  background: var(--bg-dark-2);
+  border: 1px solid var(--border-glass);
+  border-radius: 8px;
+  color: var(--white);
+  font-size: 15px;
+}
+
+.iptv-free-trial__form input::placeholder,
+.iptv-free-trial__form textarea::placeholder {
+  color: var(--muted);
+}
+
+.iptv-free-trial__form select {
+  cursor: pointer;
+}
+
+.iptv-free-trial__captcha {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid var(--border-glass);
+  border-radius: 10px;
+  padding: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+
+.iptv-free-trial__captcha input {
+  width: 80px;
+  text-align: center;
+}
+
+/* Submit */
+.iptv-free-trial__form button {
+  margin-top: 12px;
+  padding: 16px;
+  background: var(--gold);
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.iptv-free-trial__form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 215, 0, 0.35);
+}
+
+/* Image */
+.iptv-free-trial__image {
+  text-align: center;
+}
+
+.iptv-free-trial__image img {
+  max-width: 100%;
+  border-radius: 18px;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .iptv-free-trial__content {
+    grid-template-columns: 1fr;
+  }
+
+  .iptv-free-trial__image {
+    order: -1;
+  }
+}
+
+@media (max-width: 480px) {
+  .iptv-free-trial__form-wrap {
+    padding: 26px 20px;
+  }
+
+  .iptv-free-trial__hero {
+    padding: 50px 20px;
+  }
+}
+
+/* ===============================
+   IPTV FREE TRIAL INFO SECTION
+   =============================== */
+
+.iptv-trial-info {
+  background: linear-gradient(
+  180deg,
+  var(--bg-dark-2) 0%,
+  var(--bg-dark) 100%
+);
+  padding: 70px 20px;
+}
+
+.iptv-trial-info__container {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.iptv-trial-info__title {
+  font-size: 34px;
+  line-height: 1.25;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 24px;
+}
+
+.iptv-trial-info__title span {
+  color: var(--gold);
+}
+
+.iptv-trial-info__intro {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--gold);
+  margin-bottom: 36px;
+}
+
+.iptv-trial-info__heading {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--white);
+  margin: 40px 0 16px;
+}
+
+.iptv-trial-info__text {
+  font-size: 16px;
+  line-height: 1.75;
+  color: var(--gold);
+  margin-bottom: 22px;
+}
+
+.iptv-trial-info__list {
+  padding-left: 22px;
+  margin-bottom: 28px;
+}
+
+.iptv-trial-info__list li {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--gold);
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.iptv-trial-info__list li::marker {
+  color: var();
+  font-size: 18px;
+}
+
+/* ===============================
+   RESPONSIVE
+   =============================== */
+
+@media (max-width: 768px) {
+  .iptv-trial-info {
+    padding: 50px 16px;
+  }
+
+  .iptv-trial-info__title {
+    font-size: 26px;
+  }
+
+  .iptv-trial-info__heading {
+    font-size: 22px;
+  }
+
+  .iptv-trial-info__intro,
+  .iptv-trial-info__text,
+  .iptv-trial-info__list li {
+    font-size: 15px;
+  }
+}
+
+/* ===== IPTV FREE TRIAL INFO SECTION ===== */
+.iptv-trial-info {
+  background: linear-gradient(
+    180deg,
+    var(--bg-dark),
+    var(--bg-dark-2)
+  );
+  padding: 80px 20px;
+  color: var(--white);
+}
+
+.iptv-trial-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Title */
+.iptv-trial-title {
+  font-size: clamp(28px, 4vw, 42px);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 24px;
+}
+
+.iptv-trial-title span {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+/* Intro */
+.iptv-trial-intro {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--muted);
+  margin-bottom: 48px;
+}
+
+/* Blocks */
+.iptv-trial-block {
+  margin-bottom: 56px;
+  padding: 32px;
+  background: var(--glass-bg);
+  border: 1px solid var(--border-glass);
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+}
+
+.iptv-trial-heading {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: var(--gold);
+}
+
+.iptv-trial-subtext {
+  color: var(--muted);
+  margin-bottom: 20px;
+}
+
+/* Lists */
+.iptv-trial-list,
+.iptv-trial-steps {
+  padding-left: 20px;
+}
+
+.iptv-trial-list li,
+.iptv-trial-steps li {
+  margin-bottom: 14px;
+  line-height: 1.6;
+  color: var(--white);
+}
+
+.iptv-trial-list li strong,
+.iptv-trial-steps li strong {
+  color: var(--gold-soft);
+}
+
+/* Note */
+.iptv-trial-note {
+  margin-top: 24px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* Highlight Box */
+.iptv-trial-highlight {
+  padding: 36px;
+  border-radius: 18px;
+  background: linear-gradient(
+    135deg,
+    rgba(212, 175, 55, 0.15),
+    rgba(255, 255, 255, 0.05)
+  );
+  border: 1px solid var(--border-glass);
+}
+
+.iptv-trial-highlight p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: var(--white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .iptv-trial-info {
+    padding: 60px 16px;
+  }
+
+  .iptv-trial-block,
+  .iptv-trial-highlight {
+    padding: 24px;
+  }
+
+  .iptv-trial-heading {
+    font-size: 20px;
+  }
+}
+
+/* ==============================
+   IPTV FEATURES SECTION
+============================== */
+
+.iptv-features {
+  background: linear-gradient(180deg, var(--bg-dark), var(--bg-dark-2));
+  padding: 80px 20px;
+  color: var(--white);
+}
+
+.iptv-features__container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title */
+.iptv-features__title {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 44px);
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.iptv-features__title span {
+  color: var(--gold);
+}
+
+/* Table */
+.iptv-features__table-wrap {
+  overflow-x: auto;
+  margin-bottom: 50px;
+}
+
+.iptv-features__table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.iptv-features__table th {
+  background: var(--gold);
+  color: #000;
+  padding: 16px;
+  text-align: left;
+}
+
+.iptv-features__table td {
+  padding: 16px;
+  border: 1px solid var(--border-glass);
+  background: var(--glass-bg);
+}
+
+/* Tabs */
+.iptv-features__tabs {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.iptv-features__tab {
+  padding: 12px 22px;
+  background: transparent;
+  border: 1px solid var(--border-glass);
+  color: var(--white);
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.iptv-features__tab.active,
+.iptv-features__tab:hover {
+  background: var(--gold);
+  color: #000;
+}
+
+/* Content Box */
+.iptv-features__content {
+  position: relative;
+}
+
+.iptv-features__panel {
+  display: none;
+  padding: 40px;
+  background: var(--glass-bg);
+  border: 1px solid var(--border-glass);
+  border-radius: 16px;
+  animation: fadeIn 0.3s ease;
+}
+
+.iptv-features__panel.active {
+  display: block;
+}
+
+.iptv-features__panel h3 {
+  color: var(--gold-soft);
+  margin-bottom: 15px;
+}
+
+.iptv-features__panel h4 {
+  margin-top: 25px;
+  color: var(--gold);
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .iptv-features {
+    padding: 60px 16px;
+  }
+
+  .iptv-features__panel {
+    padding: 25px;
+  }
+}
+
+/* =========================
+   IPTV FAQ SECTION
+========================= */
+
+.iptv-faq {
+  background: linear-gradient(180deg, var(--bg-dark), var(--bg-dark-2));
+  padding: 80px 20px;
+  color: var(--white);
+}
+
+.iptv-faq__container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.iptv-faq__title {
+  text-align: center;
+  font-size: clamp(28px, 4vw, 42px);
+  margin-bottom: 50px;
+  font-weight: 800;
+}
+
+.iptv-faq__title span {
+  color: var(--gold);
+}
+
+/* FAQ Items */
+.iptv-faq__item {
+  border: 1px solid var(--border-glass);
+  background: var(--glass-bg);
+  margin-bottom: 15px;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.iptv-faq__question {
+  width: 100%;
+  background: none;
+  border: none;
+  color: var(--white);
+  text-align: left;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Icon */
+.iptv-faq__icon {
+  width: 18px;
+  height: 18px;
+  position: relative;
+}
+
+.iptv-faq__icon::before,
+.iptv-faq__icon::after {
+  content: "";
+  position: absolute;
+  background: var(--gold);
+  transition: all 0.3s ease;
+}
+
+.iptv-faq__icon::before {
+  width: 100%;
+  height: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iptv-faq__icon::after {
+  height: 100%;
+  width: 2px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* Remove vertical bar when active (turn + into −) */
+.iptv-faq__item.active .iptv-faq__icon::after {
+  opacity: 0;
+}
+
+/* Answer */
+.iptv-faq__answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, padding 0.3s ease;
+  padding: 0 20px;
+}
+
+.iptv-faq__answer p {
+  color: var(--muted);
+  padding-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Active State */
+.iptv-faq__item.active .iptv-faq__answer {
+  max-height: 300px;
+  padding: 0 20px 20px;
+}
+
+/* Hover */
+.iptv-faq__item:hover {
+  border-color: var(--gold-soft);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .iptv-faq {
+    padding: 60px 16px;
+  }
+
+  .iptv-faq__question {
+    font-size: 15px;
+    padding: 16px;
+  }
+}
